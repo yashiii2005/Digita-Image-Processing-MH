@@ -1,72 +1,124 @@
-# Digital Image Processing Practicals Repository
+# 🖼️ Image Processing Practicals using Python / Scilab
 
-This repository contains Python/Scilab programs for image processing practicals, organized by practical number and type of operation. Each practical has its own folder, and each question is implemented in a separate Python file.
+This repository contains a complete set of **Image Processing practical programs** implemented using **Python** (with OpenCV, NumPy, Matplotlib, and Scikit-Image) or **Scilab**.  
+The experiments cover basic image manipulation, transformations, arithmetic and logical operations, histogram processing, filtering, frequency domain analysis, and morphological operations.
 
-## Repository Structure
+---
 
-Image_Processing_Practicals
-│
-├── README.md
-├── requirements.txt
-├── images/
-│   └── sample_image.png
-│
-├── Practical_1
-│   ├── p1a_read_display.py
-│   ├── p1b_resize.py
-│   ├── p1c_gray_scale.py
-│   ├── p1d_bw_image.py
-│   ├── p1e_image_profile.py
-│   ├── p1f_separate_rgb.py
-│   └── p1g_create_color_image.py
-│
-├── Practical_2
-│   ├── p2a_negative.py
-│   ├── p2b_flip.py
-│   ├── p2c_thresholding.py
-│   └── p2d_contrast_stretching.py
-│
-├── Practical_3
-│   ├── p3a_addition.py
-│   ├── p3b_subtraction.py
-│   ├── p3c_mean_value.py
-│   └── p3d_brightness_change.py
-│
-├── Practical_4
-│   ├── p4a_and_operation.py
-│   ├── p4b_or_operation.py
-│   ├── p4c_intersection.py
-│   ├── p4d_watermark_xor.py
-│   └── p4e_not_operation.py
-│
-├── Practical_5
-│   ├── p5a_histogram_inbuilt.py
-│   └── p5b_histogram_manual.py
-│
-├── Practical_6
-│   ├── p6a_translation.py
-│   ├── p6b_scaling.py
-│   ├── p6c_rotation.py
-│   ├── p6d_shrinking.py
-│   └── p6e_zooming.py
-│
-├── Practical_7
-│   ├── p7a_restoration.py
-│   ├── p7b_salt_pepper_removal.py
-│   ├── p7c_gaussian_noise.py
-│   └── p7d_median_weiner.py
-│
-├── Practical_8
-│   ├── p8a_convolution.py
-│   └── p8b_low_high_pass.py
-│
-├── Practical_9
-│   ├── p9a_fft.py
-│   ├── p9b_freq_filter.py
-│   └── p9c_ifft.py
-│
-├── Practical_10/
-│   └── p10_edge_detection.py
-│
-└── Practical_11/
-    └── p11_morphological.py
+## 📚 Objective
+
+To gain hands-on experience in digital image processing using open-source tools and understand the fundamental operations such as:
+- Image enhancement
+- Filtering
+- Transformation
+- Noise reduction
+- Feature extraction
+
+---
+
+## 🧰 Tools and Libraries Used
+
+### 🐍 **Python**
+- **OpenCV** (`cv2`)
+- **Scikit-Image** (`skimage`)
+- **NumPy**
+- **Matplotlib**
+- **SciPy**
+
+### ⚙️ **Scilab** (alternative)
+- `imread()`, `imshow()`, `imwrite()`
+- Image enhancement & filtering commands
+
+---
+
+## 📁 Practical List and Descriptions
+
+### **1️⃣ Basic Image Operations**
+- Read and display an image  
+- Resize a given image  
+- Convert color image → gray-scale  
+- Convert image → black & white  
+- Draw image profile (intensity plot)  
+- Separate RGB planes  
+- Combine RGB planes to form color image  
+- Write 2-D data into an image file  
+
+---
+
+### **2️⃣ Point Processing Methods**
+- Negative image  
+- Flip image (horizontal/vertical)  
+- Thresholding  
+- Contrast stretching  
+
+---
+
+### **3️⃣ Image Arithmetic Operations**
+- Addition of two images  
+- Subtraction of one image from another  
+- Calculate mean value of image  
+- Adjust brightness by changing mean  
+
+---
+
+### **4️⃣ Logical Operations on Images**
+- AND operation between two images  
+- OR operation between two images  
+- Intersection of two images  
+- Watermarking using XOR operation  
+- NOT operation (Negative image)  
+
+---
+
+### **5️⃣ Histogram Processing**
+- Compute histogram and perform equalization  
+  - (a) Using inbuilt function  
+  - (b) Without using inbuilt function  
+
+---
+
+### **6️⃣ Geometric Transformations**
+- Translation  
+- Scaling  
+- Rotation  
+- Shrinking  
+- Zooming  
+
+---
+
+### **7️⃣ Image Noise and Restoration**
+- Understanding noise models (Salt & Pepper, Gaussian, etc.)  
+- Remove Salt & Pepper noise  
+- Minimize Gaussian noise  
+- Apply Median and Wiener filters  
+
+---
+
+### **8️⃣ Spatial Filtering**
+- 1-D and 2-D convolution process  
+- Apply 3×3 low-pass and high-pass filters  
+
+---
+
+### **9️⃣ Frequency Domain Filtering**
+- Apply FFT on given image  
+- Perform low-pass & high-pass filtering in frequency domain  
+- Apply IFFT to reconstruct the image  
+
+---
+
+### **🔟 Edge Detection**
+- Implement edge detection using various masks:  
+  - Sobel  
+  - Prewitt  
+  - Roberts  
+  - Canny  
+
+---
+
+### **1️⃣1️⃣ Morphological Operations**
+- Perform **Erosion**  
+- Perform **Dilation**  
+- Observe changes in object boundaries  
+
+---
